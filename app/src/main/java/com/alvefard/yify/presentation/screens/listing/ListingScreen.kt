@@ -126,7 +126,7 @@ class ListingScreen(args: Bundle) : BaseController(args), ListingContract.View {
     override fun onCreateView() {
         presenter.attachView(this)
 
-        movieType = args.getString(TYPE)
+        movieType = args.getString(TYPE).toString()
 
         setUpRecyclerView()
         setUpBottomSheet()

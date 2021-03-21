@@ -21,7 +21,7 @@ class NetworkModule {
     @Named("yify_retrofit")
     fun provideYifyRetrofit(client: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-                .baseUrl("https://yts.am/api/v2/")
+                .baseUrl("https://yts.unblockit.buzz/api/v2/")
                 .client(client)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
@@ -38,7 +38,7 @@ class NetworkModule {
                     var request = chain.request()
                     val url = request.url().newBuilder().addQueryParameter(
                             "apikey",
-                            BuildConfig.OMDB_APIKEY
+                            "b24297c8"
                     ).build()
                     request = request.newBuilder().url(url).build()
                     chain.proceed(request)

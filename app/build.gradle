@@ -3,22 +3,22 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
-  compileSdkVersion 28
+  compileSdkVersion 30
   defaultConfig {
     applicationId "com.alvefard.yifymovies"
-    minSdkVersion 21
-    targetSdkVersion 28
+    minSdkVersion 23
+    targetSdkVersion 30
     versionCode 1
     versionName "1.0"
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
   }
   buildTypes {
     debug {
-      buildConfigField "String", "OMDB_APIKEY", OMDB_KEY
+//      buildConfigField "String", "OMDB_APIKEY", "b24297c8"
     }
 
     release {
-      buildConfigField "String", "OMDB_APIKEY", OMDB_KEY
+//      buildConfigField "String", "OMDB_APIKEY", "b24297c8"
 
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
