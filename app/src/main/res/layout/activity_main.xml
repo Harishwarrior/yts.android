@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mine_shaft_background"
-    tools:context="com.alvefard.yify.presentation.screens.landing.LandingScreen">
+    tools:context="com.harish.yify.presentation.screens.landing.LandingScreen">
 
   <com.bluelinelabs.conductor.ChangeHandlerFrameLayout
       android:id="@+id/container"
